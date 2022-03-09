@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.upload_ziguang.gb1400.mapper.TEvidenceMapper">
+    <resultMap id="BaseResultMap" type="com.example.upload_ziguang.gb1400.domain.TEvidence">
+        <!--@mbg.generated-->
+        <!--@Table t_evidence-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="sbbh" jdbcType="VARCHAR" property="sbbh"/>
+        <result column="frame_id" jdbcType="BIGINT" property="frameId"/>
+        <result column="pic_type" jdbcType="INTEGER" property="picType"/>
+        <result column="hphm" jdbcType="VARCHAR" property="hphm"/>
+        <result column="color" jdbcType="INTEGER" property="color"/>
+        <result column="type" jdbcType="INTEGER" property="type"/>
+        <result column="lat" jdbcType="VARCHAR" property="lat"/>
+        <result column="lng" jdbcType="VARCHAR" property="lng"/>
+        <result column="address" jdbcType="VARCHAR" property="address"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="is_upload" jdbcType="TINYINT" property="isUpload"/>
+        <result column="upload_time" jdbcType="TIMESTAMP" property="uploadTime"/>
+        <result column="upload_num" jdbcType="INTEGER" property="uploadNum"/>
+        <result column="brand" jdbcType="VARCHAR" property="brand"/>
+        <result column="local_type" jdbcType="INTEGER" property="localType"/>
+        <result column="track_id" jdbcType="INTEGER" property="trackId"/>
+        <result column="appear_time" jdbcType="VARCHAR" property="appearTime"/>
+        <result column="upload_real_id" jdbcType="BIGINT" property="uploadRealId"/>
+        <result column="bind_id" jdbcType="INTEGER" property="bindId"/>
+        <result column="start_tag" jdbcType="VARCHAR" property="startTag"/>
+        <result column="simg_top" jdbcType="INTEGER" property="simgTop"/>
+        <result column="simg_left" jdbcType="INTEGER" property="simgLeft"/>
+        <result column="simg_bottom" jdbcType="INTEGER" property="simgBottom"/>
+        <result column="simg_right" jdbcType="INTEGER" property="simgRight"/>
+        <result column="is_black_car" jdbcType="INTEGER" property="isBlackCar"/>
+        <result column="n_face_id" jdbcType="BIGINT" property="nFaceId"/>
+        <result column="similarity" jdbcType="VARCHAR" property="similarity"/>
+        <result column="car_type" jdbcType="INTEGER" property="carType"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, sbbh, frame_id, pic_type, hphm, color, `type`, lat, lng, address, create_time,
+        is_upload, upload_time, upload_num, brand, local_type, track_id, appear_time, upload_real_id,
+        bind_id, start_tag, simg_top, simg_left, simg_bottom, simg_right, is_black_car, n_face_id,
+        similarity, car_type
+    </sql>
+
+    <select id="findAllFace" resultMap="BaseResultMap">
+        SELECT te.id,
+               sbbh,
+               te.frame_id,
+               pic_type,
+               hphm,
+               color,
+               type,
+               lat,
+               lng,
+               address,
+               te.create_time,
+               is_upload,
+               upload_time,
+               upload_num,
+               brand,
+               local_type,
+               t_evidence,
+               appear_time,
+               track_id,
+               upload_real_id,
+               bind_id,
+               start_tag,
+               is_black_car,
+               simg_top,
+               simg_left,
+               simg_bottom,
+               simg_right
+        FROM t_evidence te
+
+        WHERE te.local_type = 1
+          and te.is_black_car = 0
+        and te.is_upload=0
+        limit 0,10
+    </select>
+
+    <select id="findAllCar" resultMap="BaseResultMap">
+        SELECT te.id,
+               sbbh,
+               te.frame_id,
+               pic_type,
+               hphm,
+               color,
+               type,
+               lat,
+               lng,
+               address,
+               te.create_time,
+               is_upload,
+               upload_time,
+               upload_num,
+               brand,
+               local_type,
+               t_evidence,
+               appear_time,
+               track_id,
+               upload_real_id,
+               bind_id,
+               start_tag,
+               is_black_car,
+               simg_top,
+               simg_left,
+               simg_bottom,
+               simg_right
+        FROM t_evidence te
+        WHERE te.local_type = 3
+          and te.is_upload=0
+            and te.is_black_car=2
+          and te.hphm is not null
+        limit  0,10
+    </select>
+</mapper>

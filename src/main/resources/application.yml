@@ -1,0 +1,63 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8520
+  servlet:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+spring:
+  datasource:
+    url: jdbc:mysql://44.144.22.110:3306/car_forensics?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: car
+    password: senken
+  web:
+    resources:
+      #图片文件的总目录
+      #例子
+      #//upload//haikang图片数据
+      static-locations: file:D://
+#海康上传文件格式要求
+#//upload//haikang//2021-10-11//1564894561654//图片数据
+
+logging:
+  file:
+    path: ./log
+
+#海康图片物理路径
+upload_file: D:\upload\haiKang
+
+#当前资源路径地址
+
+
+#当前服务器ip
+#当前java程序端口
+this:
+  ip: 44.144.22.110
+  port: ${server.port}
+  url_path: D://upload/
+  sum: 1000
+  #上传以萨人脸开关
+  upload_face: false
+  #上传以萨车牌开关
+  upload_car: false
+  #上传海康接口开关
+  upload_hai_kang: false
+  #注册开关
+  register: false
+  #保活开关
+  keepAlive: false
+YI_SA_IP: 51.14.200.67
+YI_SA_PORT: 2530
+USERNAMES: admin
+PASSWORDS: 123456
+#上传不同数据的时间间隔
+SEND_YI_SA_FACE: 0/20 * * * * ?
+SEND_YI_SA_CAR: 0/20 * * * * ?
+SEND_HAI_KANG: 0/10 * * * * ?
+
+#http://44.144.6.38:9080/VIID/MotorVehicles
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

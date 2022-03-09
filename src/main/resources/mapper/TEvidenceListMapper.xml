@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.upload_ziguang.gb1400.mapper.TEvidenceListMapper">
+  <resultMap id="BaseResultMap" type="com.example.upload_ziguang.gb1400.domain.TEvidenceList">
+    <!--@mbg.generated-->
+    <!--@Table t_evidence_list-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="path" jdbcType="VARCHAR" property="path" />
+    <result column="frame_id" jdbcType="BIGINT" property="frameId" />
+    <result column="ip" jdbcType="VARCHAR" property="ip" />
+    <result column="evidence_id" jdbcType="BIGINT" property="evidenceId" />
+    <result column="pic_size" jdbcType="BIGINT" property="picSize" />
+    <result column="s_size" jdbcType="BIGINT" property="sSize" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="un_cleanup" jdbcType="TINYINT" property="unCleanup" />
+    <result column="cleanup_time" jdbcType="TIMESTAMP" property="cleanupTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `path`, frame_id, ip, evidence_id, pic_size, s_size, create_time, un_cleanup, 
+    cleanup_time
+  </sql>
+
+  <select id="getByFrameId" resultMap="BaseResultMap">
+    select * from t_evidence_list where frame_id=#{frameId,jdbcType=BIGINT}
+    </select>
+</mapper>
