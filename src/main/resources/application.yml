@@ -9,8 +9,8 @@ server:
       enabled: true
 spring:
   datasource:
-    url: jdbc:mysql://44.144.22.110:3306/car_forensics?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
-    username: car
+    url: jdbc:mysql://127.0.0.1:3306/car_forensics?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
     password: senken
   web:
     resources:
@@ -39,15 +39,15 @@ this:
   url_path: D://upload/
   sum: 1000
   #上传以萨人脸开关
-  upload_face: false
+  upload_face: true
   #上传以萨车牌开关
-  upload_car: false
+  upload_car: true
   #上传海康接口开关
   upload_hai_kang: false
   #注册开关
-  register: false
+  register: true
   #保活开关
-  keepAlive: false
+  keepAlive: true
 YI_SA_IP: 51.14.200.67
 YI_SA_PORT: 2530
 USERNAMES: admin

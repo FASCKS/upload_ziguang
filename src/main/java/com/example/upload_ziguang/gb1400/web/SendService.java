@@ -6,8 +6,6 @@ import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.XmlUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.example.upload_ziguang.gb1400.domain.CarRealIllegal;
-import com.example.upload_ziguang.gb1400.service.CarRealIllegalService;
 import com.example.upload_ziguang.gb1400.util.Global;
 import com.example.upload_ziguang.gb1400.webservice.ServicePortTypeProxy;
 import lombok.extern.slf4j.Slf4j;
@@ -32,8 +30,7 @@ import java.util.concurrent.TimeUnit;
 public class SendService {
     @Value("${upload_file}")
     private String UPLOAD_FILE_PATH;
-    @Autowired
-    private CarRealIllegalService carRealIllegalService;
+
     @Value("${this.sum}")
     private String sum;
 
@@ -50,9 +47,12 @@ public class SendService {
         return DateUtil.format(now, "yyyyMMddHHmmssSSS");
     }
 
-    /**
+/*
+    */
+/**
      * 海康转发车牌
-     */
+     *//*
+
     public synchronized void sendHaiKang() {
         QueryWrapper<CarRealIllegal> carRealIllegalQueryWrapper = new QueryWrapper<>();
         carRealIllegalQueryWrapper.eq(CarRealIllegal.COL_STATUS, 1).orderByDesc("id").last("limit " + sum);
@@ -177,5 +177,6 @@ public class SendService {
         }
         return false;
     }
+*/
 
 }

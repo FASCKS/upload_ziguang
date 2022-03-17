@@ -5,13 +5,10 @@ import cn.hutool.core.date.DateUtil;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import cn.hutool.json.JSONUtil;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 
-import com.example.upload_ziguang.gb1400.domain.CarFace;
 import com.example.upload_ziguang.gb1400.domain.GB1400.*;
 import com.example.upload_ziguang.gb1400.domain.TEvidence;
 import com.example.upload_ziguang.gb1400.domain.TEvidenceList;
-import com.example.upload_ziguang.gb1400.service.CarFaceService;
 import com.example.upload_ziguang.gb1400.service.TEvidenceListService;
 import com.example.upload_ziguang.gb1400.service.TEvidenceService;
 import com.example.upload_ziguang.gb1400.util.Global;

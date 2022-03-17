@@ -1,19 +1,15 @@
 package com.example.upload_ziguang.gb1400.web.gb1400;
 
 import cn.hutool.core.codec.Base64;
-import cn.hutool.core.convert.Convert;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.io.file.FileReader;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import cn.hutool.json.JSONUtil;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 
-import com.example.upload_ziguang.gb1400.domain.CarRealReceiveBayonet;
 import com.example.upload_ziguang.gb1400.domain.GB1400.*;
 import com.example.upload_ziguang.gb1400.domain.TEvidence;
 import com.example.upload_ziguang.gb1400.domain.TEvidenceList;
-import com.example.upload_ziguang.gb1400.service.CarRealReceiveBayonetService;
 import com.example.upload_ziguang.gb1400.service.TEvidenceListService;
 import com.example.upload_ziguang.gb1400.service.TEvidenceService;
 import com.example.upload_ziguang.gb1400.util.Global;

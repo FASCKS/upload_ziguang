@@ -92,7 +92,7 @@ public class TimeController {
     @Scheduled(cron = "${SEND_HAI_KANG}")
     public void sendHaiKang() {
         if (uploadHaiKang) {
-            sendService.sendHaiKang();
+//            sendService.sendHaiKang();
         }
     }
 
