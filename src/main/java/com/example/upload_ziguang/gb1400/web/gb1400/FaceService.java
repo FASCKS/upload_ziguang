@@ -106,6 +106,9 @@ public class FaceService {
             if (img1.getSSize() > img2.getPicSize()) {
                 bigPicture=img1;
                 thumbnail=img2;
+            }else {
+                bigPicture=img2;
+                thumbnail=img1;
             }
         }
 
