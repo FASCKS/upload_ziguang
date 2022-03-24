@@ -112,11 +112,12 @@ public class FaceService {
             }
         }
 
-        File file = new File(bigPicture.getPath());
+        File bigPictureFile = new File(bigPicture.getPath());
+        File thumbnailFile = new File(thumbnail.getPath());
 
         //判断文件是否存在
-        if (!file.exists()) {
-            log.error("人脸图片 {} 不存在，路径 {} ", file.getName(), file.getAbsolutePath());
+        if (!bigPictureFile.exists()) {
+            log.error("人脸图片 {} 不存在，路径 {} ", bigPictureFile.getName(), bigPictureFile.getAbsolutePath());
             log.info("当前人脸实体-----》{}", carFace);
             try {
                 TimeUnit.SECONDS.sleep(3);
@@ -124,8 +125,8 @@ public class FaceService {
                 log.error("线程----------->中断异常");
                 e.printStackTrace();
             }
-            if (!file.exists()){
-                log.error("等待三秒后----》人脸图片 {} 不存在，路径 {} ", file.getName(), file.getAbsolutePath());
+            if (!bigPictureFile.exists()){
+                log.error("等待三秒后----》人脸图片 {} 不存在，路径 {} ", bigPictureFile.getName(), bigPictureFile.getAbsolutePath());
                 carFace.setUploadNum(3);
                 return;
             }
@@ -159,7 +160,7 @@ public class FaceService {
             //添加base64
             String toBase64 = null;
             try {
-                toBase64 = Global.toBase64(file);
+                toBase64 = Global.toBase64(bigPictureFile);
                 subImageInfo.setData(toBase64);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -168,7 +169,7 @@ public class FaceService {
             {
                 //获取图片宽高
                 try {
-                    Image imageIO = ImageIO.read(file);
+                    Image imageIO = ImageIO.read(bigPictureFile);
                     int width = imageIO.getWidth(null);
                     int height = imageIO.getHeight(null);
                     subImageInfo.setWidth(width);
@@ -179,9 +180,41 @@ public class FaceService {
                 }
             }
             imageInfos.add(subImageInfo);
-            subImageInfoList.setSubImageInfoObject(imageInfos);
-        }
 
+        }
+        //人脸图
+        {
+            SubImageInfo subImageInfo = new SubImageInfo();
+            subImageInfo.setImageID(Global.DEVICE_IDSMAP.get(carFace.getSbbh().trim()));
+            subImageInfo.setEventSort("11");
+            subImageInfo.setDeviceID(Global.DEVICE_IDSMAP.get(carFace.getSbbh()));
+            subImageInfo.setStoragePath("http://" + ip + ":" + prot + "/" + bigPicture);
+            subImageInfo.setFileFormat("Jpeg");
+            String format = DateUtil.format(DateUtil.date(), "yyyyMMddHHmmss");
+            subImageInfo.setShotTime(format);
+            subImageInfo.setType("11");
+            //添加base64
+            String toBase64 = null;
+            try {
+                toBase64 = Global.toBase64(bigPictureFile);
+                subImageInfo.setData(toBase64);
+            } catch (IOException e) {
+                e.printStackTrace();
+                log.error("base64异常");
+            }
+            {
+                //获取图片宽高
+                try {
+                    subImageInfo.setWidth(Global.getWidth(thumbnailFile));
+                    subImageInfo.setHeight(Global.getHeight(thumbnailFile));
+                } catch (IOException e) {
+                    log.error("获取图片宽高失败");
+                    e.printStackTrace();
+                }
+            }
+            imageInfos.add(subImageInfo);
+        }
+        subImageInfoList.setSubImageInfoObject(imageInfos);
 
         face.setSubImageList(subImageInfoList);
         FaceList faceListObject = new FaceList();

@@ -101,11 +101,12 @@ public class CarService {
                 thumbnail=img1;
             }
         }
-        File file = new File(bigPicture.getPath());
+        File bigPictureFile = new File(bigPicture.getPath());
+        File thumbnailFile = new File(thumbnail.getPath());
         {
             //判断文件是否存在
-            if (!file.exists()) {
-                log.error("车牌图片 {} 不存在", file.getAbsolutePath());
+            if (!bigPictureFile.exists()) {
+                log.error("车牌图片 {} 不存在", bigPictureFile.getAbsolutePath());
                 log.info("当前车牌实体----》{}", carRealReceiveBayonet);
                 try {
                     TimeUnit.SECONDS.sleep(3);
@@ -113,8 +114,8 @@ public class CarService {
                     log.error("线程----------->中断异常");
                     e.printStackTrace();
                 }
-                if (!file.exists()) {
-                    log.error("等待三秒后--》车牌图片 {} 不存在", file.getAbsolutePath());
+                if (!bigPictureFile.exists()) {
+                    log.error("等待三秒后--》车牌图片 {} 不存在", bigPictureFile.getAbsolutePath());
                     carRealReceiveBayonet.setUploadNum(3);
                     return;
                 }
@@ -152,8 +153,10 @@ public class CarService {
             motorVehicle.setVehicleColor("99");//其它
             //获取图像
             SubImageInfoList subImageInfoListObject = new SubImageInfoList();
+            List<SubImageInfo> subImageInfoList = new ArrayList<>();
+            //大图
             {
-                List<SubImageInfo> subImageInfoList = new ArrayList<>();
+
                 SubImageInfo subImageInfo = new SubImageInfo();
                 subImageInfo.setStoragePath("http://" + ip + ":" + prot + "/" + bigPicture.getPath());
                 subImageInfo.setImageID(Global.getSourceID(Global.DEVICE_IDSMAP.get(carRealReceiveBayonet.getSbbh().trim())));
@@ -165,23 +168,53 @@ public class CarService {
                 subImageInfo.setShotTime(format);
 
                 try {
-                    subImageInfo.setWidth(Global.getWidth(file));
-                    subImageInfo.setHeight(Global.getHeight(file));
+                    subImageInfo.setWidth(Global.getWidth(bigPictureFile));
+                    subImageInfo.setHeight(Global.getHeight(bigPictureFile));
                 } catch (IOException e) {
                     log.error("获取图片宽高失败");
                     e.printStackTrace();
                 }
                 //获取base64
                 {
-                    FileReader fileReader = new FileReader(file);
+                    FileReader fileReader = new FileReader(bigPictureFile);
                     byte[] bytes = fileReader.readBytes();
                     String encode = Base64.encode(bytes);
                     subImageInfo.setData(encode);
                 }
                 subImageInfoList.add(subImageInfo);
-                subImageInfoListObject.setSubImageInfoObject(subImageInfoList);
-                motorVehicle.setSubImageList(subImageInfoListObject);
             }
+            //小图
+            {
+                SubImageInfo subImageInfo = new SubImageInfo();
+                subImageInfo.setStoragePath("http://" + ip + ":" + prot + "/" + thumbnailFile.getPath());
+                subImageInfo.setImageID(Global.getSourceID(Global.DEVICE_IDSMAP.get(carRealReceiveBayonet.getSbbh().trim())));
+                subImageInfo.setEventSort("13");
+                subImageInfo.setDeviceID(Global.DEVICE_IDSMAP.get(carRealReceiveBayonet.getSbbh()));
+                subImageInfo.setType("02");// 14  场景图
+                subImageInfo.setFileFormat("Jpeg");
+                String format = DateUtil.format(carRealReceiveBayonet.getCreateTime(), "yyyyMMddHHmmss");
+                subImageInfo.setShotTime(format);
+
+                try {
+                    subImageInfo.setWidth(Global.getWidth(thumbnailFile));
+                    subImageInfo.setHeight(Global.getHeight(thumbnailFile));
+                } catch (IOException e) {
+                    log.error("获取图片宽高失败");
+                    e.printStackTrace();
+                }
+                //获取base64
+                {
+                    FileReader fileReader = new FileReader(thumbnailFile);
+                    byte[] bytes = fileReader.readBytes();
+                    String encode = Base64.encode(bytes);
+                    subImageInfo.setData(encode);
+                }
+                subImageInfoList.add(subImageInfo);
+
+
+            }
+            subImageInfoListObject.setSubImageInfoObject(subImageInfoList);
+            motorVehicle.setSubImageList(subImageInfoListObject);
         }
 
         MotorVehicleListObject motorVehicleList = new MotorVehicleListObject();
