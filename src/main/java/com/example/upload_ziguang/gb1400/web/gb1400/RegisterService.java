@@ -69,7 +69,7 @@ public class RegisterService {
             if (authorization != null) {
                 httpRequest.header("Authorization", authorization);
             }
-
+            log.info("发送--》{}",httpRequest);
             HttpResponse execute = httpRequest.execute();
             try {
                 ResponseStatusOneObject responseStatus = JSONUtil.toBean(execute.body(), ResponseStatusOneObject.class);

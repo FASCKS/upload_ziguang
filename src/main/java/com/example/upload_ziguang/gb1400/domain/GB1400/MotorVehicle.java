@@ -75,7 +75,7 @@ public class MotorVehicle {
     /**
      * 有无车牌
      */
-    private boolean HasPlate;
+    private Integer HasPlate;
     /**
      * 号牌种类
      * 序号  消息中取值  说明

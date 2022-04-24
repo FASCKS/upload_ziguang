@@ -32,8 +32,8 @@ public class Global {
     public static Map<String, String> USERNAMEMAP;
     public static Map<String, String> PASSWORDMAP;
 
-    public static final String[] kkbhs = CommenUtil.getConfig().getStringArray("KKBH");
-    public static final String[] kkmys = CommenUtil.getConfig().getStringArray("KKMY");
+//    public static final String[] kkbhs = CommenUtil.getConfig().getStringArray("KKBH");
+//    public static final String[] kkmys = CommenUtil.getConfig().getStringArray("KKMY");
     public static final String[] puids = CommenUtil.getConfig().getStringArray("PUID");
     public static final String[] device_ids = CommenUtil.getConfig().getStringArray("DEVICE_ID");
 
@@ -53,15 +53,15 @@ public class Global {
             areacodeMap.put(puids[i], areacode[i]);
             usernameMap.put(device_ids[i], username[i]);
             passwordMap.put(device_ids[i], password[i]);
-            kkbhMap.put(puids[i],kkbhs[i] );
-            kkmyMap.put(puids[i],kkmys[i]);
+//            kkbhMap.put(puids[i],kkbhs[i] );
+//            kkmyMap.put(puids[i],kkmys[i]);
         }
         DEVICE_IDSMAP = device_idsMap;
         AREACODE = areacodeMap;
         USERNAMEMAP = usernameMap;
         PASSWORDMAP = passwordMap;
-        KKBHMAP=kkbhMap;
-        KKMYMAP=kkmyMap;
+//        KKBHMAP=kkbhMap;
+//        KKMYMAP=kkmyMap;
 
     }
 
@@ -108,7 +108,7 @@ public class Global {
         /*
          *时间编码	23-36	表示视频图像信息基本对象生成时间，精确到秒级	YYYYMMDDhhmmss，年月日时分秒
          */
-        sb.append(DateUtil.format(DateUtil.date(), "YYYYMMDDhhmmss"));
+        sb.append(DateUtil.format(DateUtil.date(), "YYYYMMddhhmmss"));
 //        序号	37-41	视频图像信息基本对象序号
         //14431311133585      69472
         String substring = IdUtil.getSnowflake().nextIdStr().substring(14, 19);
@@ -145,13 +145,13 @@ public class Global {
      */
     public static String SubscriptionId(String puid) {
         String area_code = "350404740000" + "03";
-        String format = DateUtil.format(DateUtil.date(), "YYYYMMDDhhmmss");
+        String format = DateUtil.format(DateUtil.date(), "YYYYMMddhhmmss");
         String substring = IdUtil.getSnowflake().nextIdStr().substring(15, 19);
         return area_code + format + substring;
     }
     public static String NoticeId(String puid) {
         String area_code = "350404740000" + "04";
-        String format = DateUtil.format(DateUtil.date(), "YYYYMMDDhhmmss");
+        String format = DateUtil.format(DateUtil.date(), "YYYYMMddhhmmss");
         String substring = IdUtil.getSnowflake().nextIdStr().substring(15, 19);
         return area_code + format + substring;
     }

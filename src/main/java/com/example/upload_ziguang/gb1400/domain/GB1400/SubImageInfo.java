@@ -57,7 +57,7 @@ public class SubImageInfo {
      * 14  14  场景图
      * 15  100  一般图片
      */
-    private String type;
+    private String Type;
     /**
      * 图像文件格式
      * 序号  消息中取值  说明

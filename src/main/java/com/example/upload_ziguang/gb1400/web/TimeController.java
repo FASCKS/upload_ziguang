@@ -59,20 +59,7 @@ public class TimeController {
             return;
         }
         //先注册
-        CountDownLatch register = new CountDownLatch(Global.device_ids.length);
-        for (int i = 0; i < Global.device_ids.length; i++) {
-            int finalI = i;
-            threadPoolExecutor.execute(() -> {
-                registerService.send(null, Global.device_ids[finalI]);
-                register.countDown();
-            });
-        }
-        try {
-            register.await();
-        } catch (InterruptedException e) {
-            log.error("注册时 等待异常");
-
-        }
+        registerService.send(null, Global.device_ids[0]);
     }
 
     @Scheduled(cron = "${SEND_YI_SA_CAR}")
@@ -101,20 +88,10 @@ public class TimeController {
         if (!keepAlive) {
             return;
         }
-        CountDownLatch keepAlive = new CountDownLatch(Global.device_ids.length);
-        for (int i = 0; i < Global.device_ids.length; i++) {
-            int finalI = i;
-            threadPoolExecutor.execute(() -> {
-                keepAliveService.keepAlive(Global.device_ids[finalI]);
-                keepAlive.countDown();
-            });
-        }
-        try {
-            keepAlive.await();
-        } catch (InterruptedException e) {
-            log.error("注册时 等待异常");
 
-        }
+        keepAliveService.keepAlive(Global.device_ids[0]);
+
+
     }
 
 

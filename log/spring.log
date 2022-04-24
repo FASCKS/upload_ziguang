@@ -1,253 +1,655 @@
-2022-03-24 10:30:13.584  INFO 10516 --- [main] c.e.u.UploadZiguangApplication           : Starting UploadZiguangApplication using Java 11.0.12 on DESKTOP-H1GHGNE with PID 10516 (D:\ZHUOMIAN\javatest\upload_ziguang\target\classes started by PENG1 in D:\ZHUOMIAN\javatest\upload_ziguang)
-2022-03-24 10:30:13.590  INFO 10516 --- [main] c.e.u.UploadZiguangApplication           : No active profile set, falling back to 1 default profile: "default"
-2022-03-24 10:30:16.264  INFO 10516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8520 (http)
-2022-03-24 10:30:16.273  INFO 10516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-24 10:30:16.273  INFO 10516 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-03-24 10:30:16.381  INFO 10516 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-24 10:30:16.381  INFO 10516 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2597 ms
-2022-03-24 10:30:17.421  INFO 2448 --- [main] c.e.u.UploadZiguangApplication           : Starting UploadZiguangApplication using Java 11.0.12 on DESKTOP-H1GHGNE with PID 2448 (D:\ZHUOMIAN\javatest\upload_ziguang\target\classes started by PENG1 in D:\ZHUOMIAN\javatest\upload_ziguang)
-2022-03-24 10:30:17.424  INFO 2448 --- [main] c.e.u.UploadZiguangApplication           : No active profile set, falling back to 1 default profile: "default"
-2022-03-24 10:30:18.407  INFO 2448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8520 (http)
-2022-03-24 10:30:18.415  INFO 2448 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-24 10:30:18.416  INFO 2448 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-03-24 10:30:18.506  INFO 2448 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-24 10:30:18.506  INFO 2448 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1043 ms
-2022-03-24 10:30:20.500  INFO 10516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8520 (http) with context path ''
-2022-03-24 10:30:20.512  INFO 10516 --- [main] c.e.u.UploadZiguangApplication           : Started UploadZiguangApplication in 7.924 seconds (JVM running for 10.551)
-2022-03-24 10:30:22.117  WARN 2448 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8520 is already in use
-2022-03-24 10:30:22.120  INFO 2448 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-03-24 10:30:22.148  INFO 2448 --- [main] ConditionEvaluationReportLoggingListener : 
+2022-04-24 10:54:34.056  INFO 9408 --- [main] c.e.u.UploadZiguangApplication           : Starting UploadZiguangApplication using Java 1.8.0_312 on SG264 with PID 9408 (F:\Java项目\upload_ziguang\target\classes started by SG264 in F:\Java项目\upload_ziguang)
+2022-04-24 10:54:34.062  INFO 9408 --- [main] c.e.u.UploadZiguangApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-04-24 10:54:34.789  INFO 9408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8520 (http)
+2022-04-24 10:54:34.794  INFO 9408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 10:54:34.795  INFO 9408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-24 10:54:34.842  INFO 9408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 10:54:34.842  INFO 9408 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 753 ms
+2022-04-24 10:54:35.297  INFO 9408 --- [main] c.e.u.gb1400.web.gb1400.RegisterService  : 当前nc的值为 1 
+2022-04-24 10:54:35.370  INFO 9408 --- [main] c.e.u.gb1400.web.gb1400.RegisterService  : 发送--》Request Url: http://51.14.200.67:2530/VIID/System/Register
+Request Headers: 
+    Accept: */*
+    User-Agent: PostmanRuntime/7.28.4
+    Accept-Encoding: gzip, deflate, br
+    Accept-Language: zh-CN,zh;q=0.8
+    Content-Length: 54
+    Content-Type: application/vvid+json
+Request Body: 
+    {"RegisterObject":{"DeviceID":"51011300001191281439"}}
+
+2022-04-24 15:37:25.001  INFO 2696 --- [main] c.e.u.UploadZiguangApplication           : Starting UploadZiguangApplication using Java 1.8.0_312 on SG264 with PID 2696 (F:\Java项目\upload_ziguang\target\classes started by SG264 in F:\Java项目\upload_ziguang)
+2022-04-24 15:37:25.003  INFO 2696 --- [main] c.e.u.UploadZiguangApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-04-24 15:37:25.772  INFO 2696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8520 (http)
+2022-04-24 15:37:25.779  INFO 2696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 15:37:25.779  INFO 2696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-24 15:37:25.862  INFO 2696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 15:37:25.863  INFO 2696 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 836 ms
+2022-04-24 15:37:26.623  INFO 2696 --- [main] c.e.u.gb1400.web.gb1400.RegisterService  : 当前nc的值为 1 
+2022-04-24 15:37:26.707  INFO 2696 --- [main] c.e.u.gb1400.web.gb1400.RegisterService  : 发送--》Request Url: http://51.14.200.67:2530/VIID/System/Register
+Request Headers: 
+    Accept: */*
+    User-Agent: PostmanRuntime/7.28.4
+    Accept-Encoding: gzip, deflate, br
+    Accept-Language: zh-CN,zh;q=0.8
+    Content-Length: 54
+    Content-Type: application/vvid+json
+Request Body: 
+    {"RegisterObject":{"DeviceID":"51011300001191281439"}}
+
+2022-04-24 15:37:39.238  INFO 10760 --- [main] c.e.u.UploadZiguangApplication           : Starting UploadZiguangApplication using Java 1.8.0_312 on SG264 with PID 10760 (F:\Java项目\upload_ziguang\target\classes started by SG264 in F:\Java项目\upload_ziguang)
+2022-04-24 15:37:39.240  INFO 10760 --- [main] c.e.u.UploadZiguangApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-04-24 15:37:39.831  INFO 10760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8520 (http)
+2022-04-24 15:37:39.835  INFO 10760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 15:37:39.836  INFO 10760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-24 15:37:39.879  INFO 10760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 15:37:39.879  INFO 10760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 613 ms
+2022-04-24 15:37:40.562  INFO 10760 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [51.14.200.67:11190]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-springboot-001-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-springboot-001
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-04-24 15:37:40.601  INFO 10760 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
+2022-04-24 15:37:40.602  INFO 10760 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
+2022-04-24 15:37:40.602  INFO 10760 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1650785860600
+2022-04-24 15:37:40.603  INFO 10760 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Subscribed to topic(s): alarm-forward-event
+2022-04-24 15:37:40.614  INFO 10760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8520 (http) with context path ''
+2022-04-24 15:37:40.621  INFO 10760 --- [main] c.e.u.UploadZiguangApplication           : Started UploadZiguangApplication in 1.627 seconds (JVM running for 2.031)
+2022-04-24 15:37:40.641  INFO 10760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-24 15:37:40.721  INFO 10760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-24 15:37:40.814  INFO 10760 --- [main] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-03-24 10:30:22.160 ERROR 2448 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+2022-04-24 15:37:40.826 ERROR 10760 --- [main] o.s.boot.SpringApplication               : Application run failed
 
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8520 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8520 or configure this application to listen on another port.
-
-2022-03-24 10:30:30.520  INFO 5992 --- [main] c.e.u.UploadZiguangApplication           : Starting UploadZiguangApplication using Java 11.0.12 on DESKTOP-H1GHGNE with PID 5992 (D:\ZHUOMIAN\javatest\upload_ziguang\target\classes started by PENG1 in D:\ZHUOMIAN\javatest\upload_ziguang)
-2022-03-24 10:30:30.523  INFO 5992 --- [main] c.e.u.UploadZiguangApplication           : No active profile set, falling back to 1 default profile: "default"
-2022-03-24 10:30:31.427  INFO 5992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8520 (http)
-2022-03-24 10:30:31.434  INFO 5992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-24 10:30:31.435  INFO 5992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-03-24 10:30:31.521  INFO 5992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-24 10:30:31.521  INFO 5992 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 960 ms
-2022-03-24 10:30:34.264  INFO 5992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8520 (http) with context path ''
-2022-03-24 10:30:34.279  INFO 5992 --- [main] c.e.u.UploadZiguangApplication           : Started UploadZiguangApplication in 4.218 seconds (JVM running for 6.193)
-2022-03-24 10:30:40.039  INFO 5992 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-03-24 10:30:41.286 ERROR 5992 --- [scheduling-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
-
-java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.17.jar:8.0.17]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.17.jar:8.0.17]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.17.jar:8.0.17]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827) ~[mysql-connector-java-8.0.17.jar:8.0.17]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447) ~[mysql-connector-java-8.0.17.jar:8.0.17]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-java-8.0.17.jar:8.0.17]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.17.jar:8.0.17]
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
-	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.16.jar:5.3.16]
-	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.16.jar:5.3.16]
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.16.jar:5.3.16]
-	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337) ~[mybatis-3.5.7.jar:3.5.7]
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86) ~[mybatis-3.5.7.jar:3.5.7]
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) ~[mybatis-3.5.7.jar:3.5.7]
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.5.7.jar:3.5.7]
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.7.jar:3.5.7]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.7.jar:3.5.7]
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89) ~[mybatis-3.5.7.jar:3.5.7]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151) ~[mybatis-3.5.7.jar:3.5.7]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145) ~[mybatis-3.5.7.jar:3.5.7]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.7.jar:3.5.7]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at com.sun.proxy.$Proxy63.selectList(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166) ~[mybatis-plus-core-3.4.3.4.jar:3.4.3.4]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77) ~[mybatis-plus-core-3.4.3.4.jar:3.4.3.4]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.4.3.4.jar:3.4.3.4]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.4.3.4.jar:3.4.3.4]
-	at com.sun.proxy.$Proxy65.findAllFace(Unknown Source) ~[na:na]
-	at com.example.upload_ziguang.gb1400.service.impl.TEvidenceServiceImpl.findAllFace(TEvidenceServiceImpl.java:22) ~[classes/:na]
-	at com.example.upload_ziguang.gb1400.service.impl.TEvidenceServiceImpl$$FastClassBySpringCGLIB$$3058a48d.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.16.jar:5.3.16]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.3.16.jar:5.3.16]
-	at com.example.upload_ziguang.gb1400.service.impl.TEvidenceServiceImpl$$EnhancerBySpringCGLIB$$4e6dfe62.findAllFace(<generated>) ~[classes/:na]
-	at com.example.upload_ziguang.gb1400.web.gb1400.CarService.sendCar(CarService.java:54) ~[classes/:na]
-	at com.example.upload_ziguang.gb1400.web.TimeController.senCar(TimeController.java:81) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.16.jar:5.3.16]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.16.jar:5.3.16]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) ~[spring-context-5.3.16.jar:5.3.16]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
-	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
-
-2022-03-24 10:30:41.291 ERROR 5992 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
-
-org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
-### The error may exist in file [D:\ZHUOMIAN\javatest\upload_ziguang\target\classes\mapper\TEvidenceMapper.xml]
-### The error may involve com.example.upload_ziguang.gb1400.mapper.TEvidenceMapper.findAllFace
-### The error occurred while executing a query
-### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
-	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:96) ~[mybatis-spring-2.0.6.jar:2.0.6]
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771) [spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:758) [spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) [spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) [spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) [spring-boot-2.6.4.jar:2.6.4]
+	at com.example.upload_ziguang.UploadZiguangApplication.main(UploadZiguangApplication.java:10) [classes/:na]
+Caused by: org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: InnoDB is in read only mode.
+### The error may exist in com/example/upload_ziguang/gb1400/sqlAuto/SysParamDao.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: CREATE TABLE IF  NOT EXISTS `t_temp_data` (   `id` INT UNSIGNED AUTO_INCREMENT,   `data` VARCHAR ( 100 ),   `upload` int ( 1 ) ,  PRIMARY KEY ( `id` )   ) ENGINE = INNODB DEFAULT CHARSET = utf8;
+### Cause: java.sql.SQLException: InnoDB is in read only mode.
+; uncategorized SQLException; SQL state [HY000]; error code [1874]; InnoDB is in read only mode.; nested exception is java.sql.SQLException: InnoDB is in read only mode.
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:92) ~[mybatis-spring-2.0.6.jar:2.0.6]
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at com.sun.proxy.$Proxy63.selectList(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166) ~[mybatis-plus-core-3.4.3.4.jar:3.4.3.4]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77) ~[mybatis-plus-core-3.4.3.4.jar:3.4.3.4]
+	at com.sun.proxy.$Proxy69.selectOne(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160) ~[mybatis-spring-2.0.6.jar:2.0.6]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:89) ~[mybatis-plus-core-3.4.3.4.jar:3.4.3.4]
 	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.4.3.4.jar:3.4.3.4]
 	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.4.3.4.jar:3.4.3.4]
-	at com.sun.proxy.$Proxy65.findAllFace(Unknown Source) ~[na:na]
-	at com.example.upload_ziguang.gb1400.service.impl.TEvidenceServiceImpl.findAllFace(TEvidenceServiceImpl.java:22) ~[classes/:na]
-	at com.example.upload_ziguang.gb1400.service.impl.TEvidenceServiceImpl$$FastClassBySpringCGLIB$$3058a48d.invoke(<generated>) ~[classes/:na]
+	at com.sun.proxy.$Proxy74.createTTempData(Unknown Source) ~[na:na]
+	at com.example.upload_ziguang.gb1400.sqlAuto.SysParamServiceImpl.createTTempData(SysParamServiceImpl.java:577) ~[classes/:na]
+	at com.example.upload_ziguang.gb1400.sqlAuto.SysParamServiceImpl$$FastClassBySpringCGLIB$$1912a0f2.invoke(<generated>) ~[classes/:na]
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.16.jar:5.3.16]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.3.16.jar:5.3.16]
-	at com.example.upload_ziguang.gb1400.service.impl.TEvidenceServiceImpl$$EnhancerBySpringCGLIB$$4e6dfe62.findAllFace(<generated>) ~[classes/:na]
-	at com.example.upload_ziguang.gb1400.web.gb1400.CarService.sendCar(CarService.java:54) ~[classes/:na]
-	at com.example.upload_ziguang.gb1400.web.TimeController.senCar(TimeController.java:81) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-5.3.16.jar:5.3.16]
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-5.3.16.jar:5.3.16]
-	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95) ~[spring-context-5.3.16.jar:5.3.16]
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
-	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
-Caused by: org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
-### The error may exist in file [D:\ZHUOMIAN\javatest\upload_ziguang\target\classes\mapper\TEvidenceMapper.xml]
-### The error may involve com.example.upload_ziguang.gb1400.mapper.TEvidenceMapper.findAllFace
-### The error occurred while executing a query
-### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30) ~[mybatis-3.5.7.jar:3.5.7]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:153) ~[mybatis-3.5.7.jar:3.5.7]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145) ~[mybatis-3.5.7.jar:3.5.7]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.7.jar:3.5.7]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	... 28 common frames omitted
-Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:83) ~[spring-jdbc-5.3.16.jar:5.3.16]
-	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67) ~[mybatis-spring-2.0.6.jar:2.0.6]
-	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337) ~[mybatis-3.5.7.jar:3.5.7]
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86) ~[mybatis-3.5.7.jar:3.5.7]
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) ~[mybatis-3.5.7.jar:3.5.7]
+	at com.example.upload_ziguang.gb1400.sqlAuto.SysParamServiceImpl$$EnhancerBySpringCGLIB$$1dcd17b6.createTTempData(<generated>) ~[classes/:na]
+	at com.example.upload_ziguang.gb1400.sqlAuto.SQLHelpConfig.checkTpolice(SQLHelpConfig.java:28) ~[classes/:na]
+	at com.example.upload_ziguang.gb1400.sqlAuto.SQLHelpConfig.run(SQLHelpConfig.java:34) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768) [spring-boot-2.6.4.jar:2.6.4]
+	... 5 common frames omitted
+Caused by: java.sql.SQLException: InnoDB is in read only mode.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.17.jar:8.0.17]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.5.7.jar:3.5.7]
 	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.5.7.jar:3.5.7]
 	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.7.jar:3.5.7]
 	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.7.jar:3.5.7]
 	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89) ~[mybatis-3.5.7.jar:3.5.7]
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151) ~[mybatis-3.5.7.jar:3.5.7]
-	... 35 common frames omitted
-Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.17.jar:8.0.17]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.17.jar:8.0.17]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.17.jar:8.0.17]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827) ~[mysql-connector-java-8.0.17.jar:8.0.17]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447) ~[mysql-connector-java-8.0.17.jar:8.0.17]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-java-8.0.17.jar:8.0.17]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.17.jar:8.0.17]
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
-	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.16.jar:5.3.16]
-	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.16.jar:5.3.16]
-	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.16.jar:5.3.16]
-	... 45 common frames omitted
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.7.jar:3.5.7]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) ~[mybatis-3.5.7.jar:3.5.7]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_312]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_312]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_312]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_312]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.6.jar:2.0.6]
+	... 19 common frames omitted
 
-2022-03-24 10:31:00.135  INFO 22192 --- [main] c.e.u.UploadZiguangApplication           : Starting UploadZiguangApplication using Java 11.0.12 on DESKTOP-H1GHGNE with PID 22192 (D:\ZHUOMIAN\javatest\upload_ziguang\target\classes started by PENG1 in D:\ZHUOMIAN\javatest\upload_ziguang)
-2022-03-24 10:31:00.138  INFO 22192 --- [main] c.e.u.UploadZiguangApplication           : No active profile set, falling back to 1 default profile: "default"
-2022-03-24 10:31:01.013  INFO 22192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8520 (http)
-2022-03-24 10:31:01.020  INFO 22192 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-24 10:31:01.021  INFO 22192 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-03-24 10:31:01.110  INFO 22192 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-24 10:31:01.110  INFO 22192 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 938 ms
-2022-03-24 10:31:03.682  INFO 22192 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8520 (http) with context path ''
-2022-03-24 10:31:03.694  INFO 22192 --- [main] c.e.u.UploadZiguangApplication           : Started UploadZiguangApplication in 3.991 seconds (JVM running for 5.989)
-2022-03-24 10:31:20.030  INFO 22192 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-03-24 10:31:20.132  INFO 22192 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-03-24 10:31:20.211  INFO 22192 --- [scheduling-1] c.e.u.gb1400.web.gb1400.CarService       : 当前人脸数量--->10
-2022-03-24 10:31:36.404  WARN 22192 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s270ms368µs800ns).
-2022-03-24 10:32:23.990  WARN 22192 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s587ms398µs700ns).
-2022-03-24 10:32:30.102  INFO 9628 --- [main] c.e.u.UploadZiguangApplication           : Starting UploadZiguangApplication using Java 11.0.12 on DESKTOP-H1GHGNE with PID 9628 (D:\ZHUOMIAN\javatest\upload_ziguang\target\classes started by PENG1 in D:\ZHUOMIAN\javatest\upload_ziguang)
-2022-03-24 10:32:30.104  INFO 9628 --- [main] c.e.u.UploadZiguangApplication           : No active profile set, falling back to 1 default profile: "default"
-2022-03-24 10:32:31.005  INFO 9628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8520 (http)
-2022-03-24 10:32:31.011  INFO 9628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-24 10:32:31.012  INFO 9628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-03-24 10:32:31.101  INFO 9628 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-03-24 10:32:31.102  INFO 9628 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 963 ms
-2022-03-24 10:32:34.384  INFO 9628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8520 (http) with context path ''
-2022-03-24 10:32:34.396  INFO 9628 --- [main] c.e.u.UploadZiguangApplication           : Started UploadZiguangApplication in 4.745 seconds (JVM running for 6.865)
-2022-03-24 10:32:40.023  INFO 9628 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-03-24 10:32:40.122  INFO 9628 --- [scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-03-24 10:32:40.167  INFO 9628 --- [scheduling-1] c.e.u.gb1400.web.gb1400.CarService       : 当前人脸数量--->10
-2022-03-24 10:32:54.405 ERROR 9628 --- [pool-1-thread-3] c.e.u.gb1400.web.gb1400.CarService       : 车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:54.405 ERROR 9628 --- [pool-1-thread-9] c.e.u.gb1400.web.gb1400.CarService       : 车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:54.405  INFO 9628 --- [pool-1-thread-3] c.e.u.gb1400.web.gb1400.CarService       : 当前车牌实体----》TEvidence(id=16, sbbh=xjcz_scs, frameId=1644916349299629, picType=0, hphm=null, color=null, type=1, lat=0.000000, lng=0.000000, address=null, createTime=Thu Mar 10 10:40:00 CST 2022, isUpload=0, uploadTime=Mon Mar 14 09:18:05 CST 2022, uploadNum=6, brand=null, localType=1, trackId=1910, appearTime=null, uploadRealId=null, bindId=null, startTag=null, simgTop=768, simgLeft=1600, simgBottom=992, simgRight=1920, isBlackCar=0, nFaceId=null, similarity=null, carType=null, tEvidenceLists=null)
-2022-03-24 10:32:54.405  INFO 9628 --- [pool-1-thread-9] c.e.u.gb1400.web.gb1400.CarService       : 当前车牌实体----》TEvidence(id=43, sbbh=xjcz_scs, frameId=1644916420041692, picType=0, hphm=null, color=null, type=2, lat=0.000000, lng=0.000000, address=null, createTime=Thu Mar 10 10:40:00 CST 2022, isUpload=0, uploadTime=Mon Mar 14 09:18:05 CST 2022, uploadNum=6, brand=null, localType=1, trackId=1894, appearTime=null, uploadRealId=null, bindId=null, startTag=null, simgTop=656, simgLeft=24, simgBottom=1008, simgRight=376, isBlackCar=0, nFaceId=null, similarity=null, carType=null, tEvidenceLists=null)
-2022-03-24 10:32:54.408 ERROR 9628 --- [pool-1-thread-2] c.e.u.gb1400.web.gb1400.CarService       : 车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:54.409 ERROR 9628 --- [pool-1-thread-6] c.e.u.gb1400.web.gb1400.CarService       : 车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:54.409 ERROR 9628 --- [pool-1-thread-4] c.e.u.gb1400.web.gb1400.CarService       : 车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:54.409  INFO 9628 --- [pool-1-thread-6] c.e.u.gb1400.web.gb1400.CarService       : 当前车牌实体----》TEvidence(id=35, sbbh=xjcz_scs, frameId=1644916390281690, picType=0, hphm=null, color=null, type=2, lat=0.000000, lng=0.000000, address=null, createTime=Thu Mar 10 10:40:00 CST 2022, isUpload=0, uploadTime=Mon Mar 14 09:18:05 CST 2022, uploadNum=6, brand=null, localType=1, trackId=1892, appearTime=null, uploadRealId=null, bindId=null, startTag=null, simgTop=532, simgLeft=0, simgBottom=884, simgRight=224, isBlackCar=0, nFaceId=null, similarity=null, carType=null, tEvidenceLists=null)
-2022-03-24 10:32:54.409  INFO 9628 --- [pool-1-thread-2] c.e.u.gb1400.web.gb1400.CarService       : 当前车牌实体----》TEvidence(id=14, sbbh=xjcz_scs, frameId=1644916340201653, picType=0, hphm=null, color=null, type=2, lat=0.000000, lng=0.000000, address=null, createTime=Thu Mar 10 10:40:00 CST 2022, isUpload=0, uploadTime=Mon Mar 14 09:18:05 CST 2022, uploadNum=6, brand=null, localType=1, trackId=1880, appearTime=null, uploadRealId=null, bindId=null, startTag=null, simgTop=776, simgLeft=292, simgBottom=1064, simgRight=580, isBlackCar=0, nFaceId=null, similarity=null, carType=null, tEvidenceLists=null)
-2022-03-24 10:32:54.410  INFO 9628 --- [pool-1-thread-4] c.e.u.gb1400.web.gb1400.CarService       : 当前车牌实体----》TEvidence(id=18, sbbh=xjcz_scs, frameId=1644916352201674, picType=0, hphm=null, color=null, type=2, lat=0.000000, lng=0.000000, address=null, createTime=Thu Mar 10 10:40:00 CST 2022, isUpload=0, uploadTime=Mon Mar 14 09:18:05 CST 2022, uploadNum=6, brand=null, localType=1, trackId=1882, appearTime=null, uploadRealId=null, bindId=null, startTag=null, simgTop=748, simgLeft=292, simgBottom=1036, simgRight=580, isBlackCar=0, nFaceId=null, similarity=null, carType=null, tEvidenceLists=null)
-2022-03-24 10:32:54.411 ERROR 9628 --- [pool-1-thread-10] c.e.u.gb1400.web.gb1400.CarService       : 车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:54.411 ERROR 9628 --- [pool-1-thread-8] c.e.u.gb1400.web.gb1400.CarService       : 车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:54.412  INFO 9628 --- [pool-1-thread-10] c.e.u.gb1400.web.gb1400.CarService       : 当前车牌实体----》TEvidence(id=49, sbbh=xjcz_scs, frameId=1644916425939605, picType=0, hphm=null, color=null, type=2, lat=0.000000, lng=0.000000, address=null, createTime=Thu Mar 10 10:40:00 CST 2022, isUpload=0, uploadTime=Mon Mar 14 09:18:05 CST 2022, uploadNum=6, brand=null, localType=1, trackId=1936, appearTime=null, uploadRealId=null, bindId=null, startTag=null, simgTop=504, simgLeft=1472, simgBottom=1080, simgRight=1920, isBlackCar=0, nFaceId=null, similarity=null, carType=null, tEvidenceLists=null)
-2022-03-24 10:32:54.412  INFO 9628 --- [pool-1-thread-8] c.e.u.gb1400.web.gb1400.CarService       : 当前车牌实体----》TEvidence(id=41, sbbh=xjcz_scs, frameId=1644916408499625, picType=0, hphm=null, color=null, type=2, lat=0.000000, lng=0.000000, address=null, createTime=Thu Mar 10 10:40:00 CST 2022, isUpload=0, uploadTime=Mon Mar 14 09:18:05 CST 2022, uploadNum=6, brand=null, localType=1, trackId=1926, appearTime=null, uploadRealId=null, bindId=null, startTag=null, simgTop=572, simgLeft=1492, simgBottom=828, simgRight=1780, isBlackCar=0, nFaceId=null, similarity=null, carType=null, tEvidenceLists=null)
-2022-03-24 10:32:54.412 ERROR 9628 --- [pool-1-thread-5] c.e.u.gb1400.web.gb1400.CarService       : 车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:54.412  INFO 9628 --- [pool-1-thread-5] c.e.u.gb1400.web.gb1400.CarService       : 当前车牌实体----》TEvidence(id=24, sbbh=xjcz_scs, frameId=1644916377859598, picType=0, hphm=null, color=null, type=2, lat=0.000000, lng=0.000000, address=null, createTime=Thu Mar 10 10:40:00 CST 2022, isUpload=0, uploadTime=Mon Mar 14 09:18:05 CST 2022, uploadNum=6, brand=null, localType=1, trackId=1914, appearTime=null, uploadRealId=null, bindId=null, startTag=null, simgTop=588, simgLeft=332, simgBottom=684, simgRight=460, isBlackCar=0, nFaceId=null, similarity=null, carType=null, tEvidenceLists=null)
-2022-03-24 10:32:54.415 ERROR 9628 --- [pool-1-thread-7] c.e.u.gb1400.web.gb1400.CarService       : 车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:54.416  INFO 9628 --- [pool-1-thread-7] c.e.u.gb1400.web.gb1400.CarService       : 当前车牌实体----》TEvidence(id=39, sbbh=xjcz_scs, frameId=1644916392281657, picType=0, hphm=null, color=null, type=2, lat=0.000000, lng=0.000000, address=null, createTime=Thu Mar 10 10:40:00 CST 2022, isUpload=0, uploadTime=Mon Mar 14 09:18:05 CST 2022, uploadNum=6, brand=null, localType=1, trackId=1888, appearTime=null, uploadRealId=null, bindId=null, startTag=null, simgTop=628, simgLeft=1008, simgBottom=884, simgRight=1328, isBlackCar=0, nFaceId=null, similarity=null, carType=null, tEvidenceLists=null)
-2022-03-24 10:32:57.574 ERROR 9628 --- [pool-1-thread-5] c.e.u.gb1400.web.gb1400.CarService       : 等待三秒后--》车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:57.574 ERROR 9628 --- [pool-1-thread-8] c.e.u.gb1400.web.gb1400.CarService       : 等待三秒后--》车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:57.574 ERROR 9628 --- [pool-1-thread-9] c.e.u.gb1400.web.gb1400.CarService       : 等待三秒后--》车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:57.574 ERROR 9628 --- [pool-1-thread-2] c.e.u.gb1400.web.gb1400.CarService       : 等待三秒后--》车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:57.574 ERROR 9628 --- [pool-1-thread-6] c.e.u.gb1400.web.gb1400.CarService       : 等待三秒后--》车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:57.574 ERROR 9628 --- [pool-1-thread-3] c.e.u.gb1400.web.gb1400.CarService       : 等待三秒后--》车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:57.574 ERROR 9628 --- [pool-1-thread-4] c.e.u.gb1400.web.gb1400.CarService       : 等待三秒后--》车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:57.574 ERROR 9628 --- [pool-1-thread-10] c.e.u.gb1400.web.gb1400.CarService       : 等待三秒后--》车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:32:57.574 ERROR 9628 --- [pool-1-thread-7] c.e.u.gb1400.web.gb1400.CarService       : 等待三秒后--》车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:33:07.522 ERROR 9628 --- [pool-1-thread-1] c.e.u.gb1400.web.gb1400.CarService       : 车牌图片 C:\Users\SG507\Desktop\1_2.jpg 不存在
-2022-03-24 10:33:13.517  INFO 9628 --- [pool-1-thread-1] c.e.u.gb1400.web.gb1400.CarService       : 当前车牌实体----》TEvidence(id=12, sbbh=xjcz_scs, frameId=1644916333241666, picType=0, hphm=null, color=null, type=2, lat=0.000000, lng=0.000000, address=null, createTime=Thu Mar 10 10:40:00 CST 2022, isUpload=0, uploadTime=Mon Mar 14 09:18:04 CST 2022, uploadNum=6, brand=null, localType=1, trackId=1878, appearTime=null, uploadRealId=null, bindId=null, startTag=null, simgTop=636, simgLeft=868, simgBottom=956, simgRight=1316, isBlackCar=0, nFaceId=null, similarity=null, carType=null, tEvidenceLists=null)
+2022-04-24 15:37:40.897  INFO 10760 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Resetting generation due to: consumer pro-actively leaving the group
+2022-04-24 15:37:40.897  INFO 10760 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Request joining group due to: consumer pro-actively leaving the group
+2022-04-24 15:37:40.897  INFO 10760 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Unsubscribed all topics or patterns and assigned partitions
+2022-04-24 15:37:40.897  INFO 10760 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Resetting generation due to: consumer pro-actively leaving the group
+2022-04-24 15:37:40.897  INFO 10760 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Request joining group due to: consumer pro-actively leaving the group
+2022-04-24 15:37:40.898  INFO 10760 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2022-04-24 15:37:40.898  INFO 10760 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-04-24 15:37:40.898  INFO 10760 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2022-04-24 15:37:40.900  INFO 10760 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-kafka-springboot-001-1 unregistered
+2022-04-24 15:37:40.900  INFO 10760 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kafka-springboot-001: Consumer stopped
+2022-04-24 15:37:40.902  INFO 10760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-24 15:37:40.904  INFO 10760 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-24 15:39:32.565  INFO 17056 --- [main] c.e.u.UploadZiguangApplication           : Starting UploadZiguangApplication using Java 1.8.0_312 on SG264 with PID 17056 (F:\Java项目\upload_ziguang\target\classes started by SG264 in F:\Java项目\upload_ziguang)
+2022-04-24 15:39:32.567  INFO 17056 --- [main] c.e.u.UploadZiguangApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-04-24 15:39:33.157  INFO 17056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8520 (http)
+2022-04-24 15:39:33.162  INFO 17056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 15:39:33.162  INFO 17056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-24 15:39:33.204  INFO 17056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 15:39:33.204  INFO 17056 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 610 ms
+2022-04-24 15:39:34.082  INFO 17056 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [51.14.200.67:11190]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-springboot-001-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-springboot-001
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-04-24 15:39:34.172  INFO 17056 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
+2022-04-24 15:39:34.173  INFO 17056 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
+2022-04-24 15:39:34.173  INFO 17056 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1650785974170
+2022-04-24 15:39:34.177  INFO 17056 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Subscribed to topic(s): alarm-forward-event
+2022-04-24 15:39:34.199  INFO 17056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8520 (http) with context path ''
+2022-04-24 15:39:34.214  INFO 17056 --- [main] c.e.u.UploadZiguangApplication           : Started UploadZiguangApplication in 1.896 seconds (JVM running for 2.351)
+2022-04-24 15:39:34.270  INFO 17056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-24 15:39:34.437  INFO 17056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-24 15:39:37.513  INFO 17056 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Resetting generation due to: consumer pro-actively leaving the group
+2022-04-24 15:39:37.513  INFO 17056 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Request joining group due to: consumer pro-actively leaving the group
+2022-04-24 15:39:37.513  INFO 17056 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Unsubscribed all topics or patterns and assigned partitions
+2022-04-24 15:39:37.514  INFO 17056 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Resetting generation due to: consumer pro-actively leaving the group
+2022-04-24 15:39:37.514  INFO 17056 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Request joining group due to: consumer pro-actively leaving the group
+2022-04-24 15:39:37.514  INFO 17056 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2022-04-24 15:39:37.514  INFO 17056 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-04-24 15:39:37.514  INFO 17056 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2022-04-24 15:39:37.517  INFO 17056 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-kafka-springboot-001-1 unregistered
+2022-04-24 15:39:37.517  INFO 17056 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kafka-springboot-001: Consumer stopped
+2022-04-24 15:39:37.519  INFO 17056 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-24 15:39:37.521  INFO 17056 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-24 15:40:43.612  INFO 21908 --- [main] c.e.u.UploadZiguangApplication           : Starting UploadZiguangApplication using Java 1.8.0_312 on SG264 with PID 21908 (F:\Java项目\upload_ziguang\target\classes started by SG264 in F:\Java项目\upload_ziguang)
+2022-04-24 15:40:43.614  INFO 21908 --- [main] c.e.u.UploadZiguangApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-04-24 15:40:44.250  INFO 21908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8520 (http)
+2022-04-24 15:40:44.255  INFO 21908 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 15:40:44.255  INFO 21908 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-24 15:40:44.300  INFO 21908 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 15:40:44.300  INFO 21908 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 664 ms
+2022-04-24 15:40:44.721  INFO 21908 --- [main] c.e.u.gb1400.web.gb1400.RegisterService  : 当前nc的值为 1 
+2022-04-24 15:40:44.785  INFO 21908 --- [main] c.e.u.gb1400.web.gb1400.RegisterService  : 发送--》Request Url: http://51.14.200.67:2530/VIID/System/Register
+Request Headers: 
+    Accept: */*
+    User-Agent: PostmanRuntime/7.28.4
+    Accept-Encoding: gzip, deflate, br
+    Accept-Language: zh-CN,zh;q=0.8
+    Content-Length: 54
+    Content-Type: application/vvid+json
+Request Body: 
+    {"RegisterObject":{"DeviceID":"51011300001191281439"}}
+
+2022-04-24 15:40:59.270  INFO 14024 --- [main] c.e.u.UploadZiguangApplication           : Starting UploadZiguangApplication using Java 1.8.0_312 on SG264 with PID 14024 (F:\Java项目\upload_ziguang\target\classes started by SG264 in F:\Java项目\upload_ziguang)
+2022-04-24 15:40:59.272  INFO 14024 --- [main] c.e.u.UploadZiguangApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-04-24 15:40:59.868  INFO 14024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8520 (http)
+2022-04-24 15:40:59.872  INFO 14024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 15:40:59.872  INFO 14024 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-24 15:40:59.914  INFO 14024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 15:40:59.915  INFO 14024 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 618 ms
+2022-04-24 15:41:00.639  INFO 14024 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [51.14.200.67:11190]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-springboot-001-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-springboot-001
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-04-24 15:41:00.680  INFO 14024 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
+2022-04-24 15:41:00.681  INFO 14024 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
+2022-04-24 15:41:00.681  INFO 14024 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1650786060680
+2022-04-24 15:41:00.682  INFO 14024 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Subscribed to topic(s): alarm-forward-event
+2022-04-24 15:41:00.694  INFO 14024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8520 (http) with context path ''
+2022-04-24 15:41:00.702  INFO 14024 --- [main] c.e.u.UploadZiguangApplication           : Started UploadZiguangApplication in 1.672 seconds (JVM running for 2.078)
+2022-04-24 15:41:00.723  INFO 14024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-24 15:41:00.800  INFO 14024 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-24 15:41:04.386  INFO 14024 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Resetting generation due to: consumer pro-actively leaving the group
+2022-04-24 15:41:04.386  INFO 14024 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Request joining group due to: consumer pro-actively leaving the group
+2022-04-24 15:41:04.386  INFO 14024 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Unsubscribed all topics or patterns and assigned partitions
+2022-04-24 15:41:04.386  INFO 14024 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Resetting generation due to: consumer pro-actively leaving the group
+2022-04-24 15:41:04.386  INFO 14024 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Request joining group due to: consumer pro-actively leaving the group
+2022-04-24 15:41:04.387  INFO 14024 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2022-04-24 15:41:04.387  INFO 14024 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-04-24 15:41:04.387  INFO 14024 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2022-04-24 15:41:04.389  INFO 14024 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-kafka-springboot-001-1 unregistered
+2022-04-24 15:41:04.389  INFO 14024 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kafka-springboot-001: Consumer stopped
+2022-04-24 15:41:04.391  INFO 14024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-24 15:41:04.393  INFO 14024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-24 15:42:27.210  INFO 6372 --- [main] c.e.u.UploadZiguangApplication           : Starting UploadZiguangApplication using Java 1.8.0_312 on SG264 with PID 6372 (F:\Java项目\upload_ziguang\target\classes started by SG264 in F:\Java项目\upload_ziguang)
+2022-04-24 15:42:27.213  INFO 6372 --- [main] c.e.u.UploadZiguangApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-04-24 15:42:28.183  INFO 6372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8520 (http)
+2022-04-24 15:42:28.188  INFO 6372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 15:42:28.188  INFO 6372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-24 15:42:28.233  INFO 6372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 15:42:28.234  INFO 6372 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 989 ms
+2022-04-24 15:42:29.029  INFO 6372 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [51.14.200.67:11190]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-springboot-001-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-springboot-001
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-04-24 15:42:29.083  INFO 6372 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
+2022-04-24 15:42:29.084  INFO 6372 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
+2022-04-24 15:42:29.084  INFO 6372 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1650786149082
+2022-04-24 15:42:29.086  INFO 6372 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Subscribed to topic(s): alarm-forward-event
+2022-04-24 15:42:29.101  INFO 6372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8520 (http) with context path ''
+2022-04-24 15:42:29.112  INFO 6372 --- [main] c.e.u.UploadZiguangApplication           : Started UploadZiguangApplication in 2.308 seconds (JVM running for 2.804)
+2022-04-24 15:42:29.144  INFO 6372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-24 15:42:29.237  INFO 6372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-24 15:42:31.328  INFO 6372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Resetting generation due to: consumer pro-actively leaving the group
+2022-04-24 15:42:31.328  INFO 6372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Request joining group due to: consumer pro-actively leaving the group
+2022-04-24 15:42:31.328  INFO 6372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Unsubscribed all topics or patterns and assigned partitions
+2022-04-24 15:42:31.329  INFO 6372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Resetting generation due to: consumer pro-actively leaving the group
+2022-04-24 15:42:31.329  INFO 6372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Request joining group due to: consumer pro-actively leaving the group
+2022-04-24 15:42:31.329  INFO 6372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2022-04-24 15:42:31.329  INFO 6372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-04-24 15:42:31.329  INFO 6372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2022-04-24 15:42:31.331  INFO 6372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-kafka-springboot-001-1 unregistered
+2022-04-24 15:42:31.331  INFO 6372 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kafka-springboot-001: Consumer stopped
+2022-04-24 15:42:31.333  INFO 6372 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-24 15:42:31.335  INFO 6372 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-24 15:59:49.033  INFO 7452 --- [main] c.e.u.UploadZiguangApplication           : Starting UploadZiguangApplication using Java 1.8.0_312 on SG264 with PID 7452 (F:\Java项目\upload_ziguang\target\classes started by SG264 in F:\Java项目\upload_ziguang)
+2022-04-24 15:59:49.034  INFO 7452 --- [main] c.e.u.UploadZiguangApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-04-24 15:59:49.629  INFO 7452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8520 (http)
+2022-04-24 15:59:49.633  INFO 7452 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 15:59:49.633  INFO 7452 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-24 15:59:49.675  INFO 7452 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 15:59:49.675  INFO 7452 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 614 ms
+2022-04-24 15:59:50.378  INFO 7452 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [51.14.200.67:11190]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-springboot-001-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-springboot-001
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-04-24 15:59:50.419  INFO 7452 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.0.0
+2022-04-24 15:59:50.419  INFO 7452 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 8cb0a5e9d3441962
+2022-04-24 15:59:50.419  INFO 7452 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1650787190418
+2022-04-24 15:59:50.420  INFO 7452 --- [main] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Subscribed to topic(s): alarm-forward-event
+2022-04-24 15:59:50.431  INFO 7452 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8520 (http) with context path ''
+2022-04-24 15:59:50.438  INFO 7452 --- [main] c.e.u.UploadZiguangApplication           : Started UploadZiguangApplication in 1.642 seconds (JVM running for 2.037)
+2022-04-24 15:59:50.457  INFO 7452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-24 15:59:50.519  INFO 7452 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-24 15:59:58.914  WARN 7452 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Bootstrap broker 51.14.200.67:11190 (id: -1 rack: null) disconnected
+2022-04-24 16:00:20.017  WARN 7452 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Connection to node -1 (/51.14.200.67:11190) could not be established. Broker may not be available.
+2022-04-24 16:00:20.017  WARN 7452 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Bootstrap broker 51.14.200.67:11190 (id: -1 rack: null) disconnected
+2022-04-24 16:00:41.119  WARN 7452 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Connection to node -1 (/51.14.200.67:11190) could not be established. Broker may not be available.
+2022-04-24 16:00:41.119  WARN 7452 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Bootstrap broker 51.14.200.67:11190 (id: -1 rack: null) disconnected
+2022-04-24 16:00:50.678  INFO 7452 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Resetting generation due to: consumer pro-actively leaving the group
+2022-04-24 16:00:50.678  INFO 7452 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Request joining group due to: consumer pro-actively leaving the group
+2022-04-24 16:00:50.678  INFO 7452 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.clients.consumer.KafkaConsumer     : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Unsubscribed all topics or patterns and assigned partitions
+2022-04-24 16:00:50.678  INFO 7452 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Resetting generation due to: consumer pro-actively leaving the group
+2022-04-24 16:00:50.678  INFO 7452 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-kafka-springboot-001-1, groupId=kafka-springboot-001] Request joining group due to: consumer pro-actively leaving the group
+2022-04-24 16:00:50.679  INFO 7452 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2022-04-24 16:00:50.679  INFO 7452 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-04-24 16:00:50.679  INFO 7452 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2022-04-24 16:00:50.681  INFO 7452 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-kafka-springboot-001-1 unregistered
+2022-04-24 16:00:50.681  INFO 7452 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : kafka-springboot-001: Consumer stopped
+2022-04-24 16:00:50.683  INFO 7452 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-24 16:00:50.685  INFO 7452 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

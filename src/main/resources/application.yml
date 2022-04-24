@@ -8,8 +8,24 @@ server:
       charset: UTF-8
       enabled: true
 spring:
+#  生产者配置
+  kafka:
+    bootstrap-servers: 51.14.200.67:11190
+    consumer:
+      auto-commit-interval: 100
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      max-poll-records: 500
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    listener:
+      ack-mode: manual_immediate
+      poll-timeout: 500S
+#  消费者配置
+
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/car_forensics?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://127.0.0.1:3306/db_light?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+#    url: jdbc:mysql://127.0.0.1:3306/car_4.0?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
     password: senken
   web:
@@ -17,7 +33,7 @@ spring:
       #图片文件的总目录
       #例子
       #//upload//haikang图片数据
-      static-locations: file:D://
+      static-locations: file:/home/pi/image
 #海康上传文件格式要求
 #//upload//haikang//2021-10-11//1564894561654//图片数据
 
@@ -58,6 +74,19 @@ SEND_YI_SA_CAR: 0/20 * * * * ?
 SEND_HAI_KANG: 0/10 * * * * ?
 
 #http://44.144.6.38:9080/VIID/MotorVehicles
-mybatis-plus:
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
+
+
+
+
+
+
+
+
+
+

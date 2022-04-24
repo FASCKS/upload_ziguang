@@ -75,7 +75,7 @@
         WHERE te.local_type = 1
           and te.is_black_car = 0
         and te.is_upload=0
-        limit 0,10
+        limit 0,20
     </select>
 
     <select id="findAllCar" resultMap="BaseResultMap">
@@ -111,6 +111,6 @@
           and te.is_upload=0
             and te.is_black_car=2
           and te.hphm is not null
-        limit  0,10
+        limit  0,20
     </select>
 </mapper>

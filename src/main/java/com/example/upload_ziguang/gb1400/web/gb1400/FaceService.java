@@ -138,10 +138,10 @@ public class FaceService {
         face.setSourceID(Global.getSourceID(Global.DEVICE_IDSMAP.get(carFace.getSbbh().trim())));
         face.setFaceID(Global.getFaceID(face.getSourceID(), "06"));
         face.setDeviceID(Global.DEVICE_IDSMAP.get(carFace.getSbbh().trim()));
-        face.setLeftTopX(0);
-        face.setLeftTopY(0);
-        face.setRightBtmX(1000);
-        face.setRightBtmY(1000);
+        face.setLeftTopX(carFace.getSimgTop());
+        face.setLeftTopY(carFace.getSimgLeft());
+        face.setRightBtmX(carFace.getSimgRight());
+        face.setRightBtmY(carFace.getSimgBottom());
         faceList.add(face);
 
         SubImageInfoList subImageInfoList = new SubImageInfoList();
@@ -152,9 +152,9 @@ public class FaceService {
             subImageInfo.setImageID(Global.DEVICE_IDSMAP.get(carFace.getSbbh().trim()));
             subImageInfo.setEventSort("11");
             subImageInfo.setDeviceID(Global.DEVICE_IDSMAP.get(carFace.getSbbh()));
-            subImageInfo.setStoragePath("http://" + ip + ":" + prot + "/" + bigPicture);
+            subImageInfo.setStoragePath("http://" + ip + ":" + prot + "/" + bigPicture.getPath().substring(15));
             subImageInfo.setFileFormat("Jpeg");
-            String format = DateUtil.format(DateUtil.date(), "yyyyMMddHHmmss");
+            String format = DateUtil.format(carFace.getCreateTime(), "YYYYMMddhhmmss");
             subImageInfo.setShotTime(format);
             subImageInfo.setType("14");
             //添加base64
@@ -188,15 +188,15 @@ public class FaceService {
             subImageInfo.setImageID(Global.DEVICE_IDSMAP.get(carFace.getSbbh().trim()));
             subImageInfo.setEventSort("11");
             subImageInfo.setDeviceID(Global.DEVICE_IDSMAP.get(carFace.getSbbh()));
-            subImageInfo.setStoragePath("http://" + ip + ":" + prot + "/" + bigPicture);
+            subImageInfo.setStoragePath("http://" + ip + ":" + prot + "/" + thumbnail.getPath().substring(15));
             subImageInfo.setFileFormat("Jpeg");
-            String format = DateUtil.format(DateUtil.date(), "yyyyMMddHHmmss");
+            String format = DateUtil.format(carFace.getCreateTime(), "YYYYMMddhhmmss");
             subImageInfo.setShotTime(format);
             subImageInfo.setType("11");
             //添加base64
             String toBase64 = null;
             try {
-                toBase64 = Global.toBase64(bigPictureFile);
+                toBase64 = Global.toBase64(thumbnailFile);
                 subImageInfo.setData(toBase64);
             } catch (IOException e) {
                 e.printStackTrace();

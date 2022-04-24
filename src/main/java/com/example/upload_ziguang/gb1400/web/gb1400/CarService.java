@@ -131,24 +131,25 @@ public class CarService {
             motorVehicle.setMotorVehicleID(Global.getFaceID(motorVehicle.getSourceID(), "02"));
             motorVehicle.setDeviceID(Global.DEVICE_IDSMAP.get(carRealReceiveBayonet.getSbbh().trim()));
             motorVehicle.setStorageUrl1("http://" + ip + ":" + prot + "/" + bigPicture.getPath());
-            motorVehicle.setPlateNo(carRealReceiveBayonet.getHphm().isEmpty() ? "无车牌" : carRealReceiveBayonet.getHphm());
+            try {
+                motorVehicle.setPlateNo(carRealReceiveBayonet.getHphm().isEmpty() ? "无车牌" : carRealReceiveBayonet.getHphm());
+            }catch (Exception e){
+                motorVehicle.setPlateNo("无车牌");
+            }
+
             motorVehicleList.add(motorVehicle);
             motorVehicleListObject.setMotorVehicleObject(motorVehicleList);
             //有无车牌
-            motorVehicle.setHasPlate(true);
+            motorVehicle.setHasPlate(1);
             //号牌种类
-            String hpzl= colorToHpzl(carRealReceiveBayonet.getColor(), carRealReceiveBayonet.getHphm());
-            motorVehicle.setPlateClass(hpzl);
+            motorVehicle.setPlateClass("99");
             //号牌颜色
-            String hpys = isColor(hpzl);
-            if (hpys == null) {
-                hpys = "99";
-            }
-            motorVehicle.setPlateColor(isColor(hpys));
-            motorVehicle.setLeftTopX(0);
-            motorVehicle.setLeftTopY(0);
-            motorVehicle.setRightBtmX(100);
-            motorVehicle.setRightBtmY(100);
+
+            motorVehicle.setPlateColor("99");
+            motorVehicle.setLeftTopX(carRealReceiveBayonet.getSimgLeft());
+            motorVehicle.setLeftTopY(carRealReceiveBayonet.getSimgTop());
+            motorVehicle.setRightBtmX(carRealReceiveBayonet.getSimgRight());
+            motorVehicle.setRightBtmY(carRealReceiveBayonet.getSimgBottom());
             //车身颜色
             motorVehicle.setVehicleColor("99");//其它
             //获取图像
@@ -158,13 +159,13 @@ public class CarService {
             {
 
                 SubImageInfo subImageInfo = new SubImageInfo();
-                subImageInfo.setStoragePath("http://" + ip + ":" + prot + "/" + bigPicture.getPath());
+                subImageInfo.setStoragePath("http://" + ip + ":" + prot + "/" + bigPicture.getPath().substring(15));
                 subImageInfo.setImageID(Global.getSourceID(Global.DEVICE_IDSMAP.get(carRealReceiveBayonet.getSbbh().trim())));
                 subImageInfo.setEventSort("13");
                 subImageInfo.setDeviceID(Global.DEVICE_IDSMAP.get(carRealReceiveBayonet.getSbbh()));
-                subImageInfo.setType("14");// 14  场景图
+                subImageInfo.setType("01");// 14  场景图
                 subImageInfo.setFileFormat("Jpeg");
-                String format = DateUtil.format(carRealReceiveBayonet.getCreateTime(), "yyyyMMddHHmmss");
+                String format = DateUtil.format(carRealReceiveBayonet.getCreateTime(), "YYYYMMddhhmmss");
                 subImageInfo.setShotTime(format);
 
                 try {
@@ -186,13 +187,13 @@ public class CarService {
             //小图
             {
                 SubImageInfo subImageInfo = new SubImageInfo();
-                subImageInfo.setStoragePath("http://" + ip + ":" + prot + "/" + thumbnailFile.getPath());
+                subImageInfo.setStoragePath("http://" + ip + ":" + prot + "/" + thumbnailFile.getPath().substring(15));
                 subImageInfo.setImageID(Global.getSourceID(Global.DEVICE_IDSMAP.get(carRealReceiveBayonet.getSbbh().trim())));
                 subImageInfo.setEventSort("13");
                 subImageInfo.setDeviceID(Global.DEVICE_IDSMAP.get(carRealReceiveBayonet.getSbbh()));
                 subImageInfo.setType("02");// 14  场景图
                 subImageInfo.setFileFormat("Jpeg");
-                String format = DateUtil.format(carRealReceiveBayonet.getCreateTime(), "yyyyMMddHHmmss");
+                String format = DateUtil.format(carRealReceiveBayonet.getCreateTime(), "YYYYMMddhhmmss");
                 subImageInfo.setShotTime(format);
 
                 try {
