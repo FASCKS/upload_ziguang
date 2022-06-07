@@ -75,8 +75,14 @@ public class FaceService {
         for (TEvidence carFace : allFace) {
             TimeController.threadPoolExecutor.execute(() -> {
                 //上传
-                sendFaceInfo(carFace);
-                sendFace.countDown();
+               try {
+                   sendFaceInfo(carFace);
+               }catch (Exception e){
+                   log.error(e.getMessage());
+               }finally {
+                   sendFace.countDown();
+               }
+
             });
             carFace.setIsUpload(Convert.toByte(1));
         }
@@ -90,9 +96,11 @@ public class FaceService {
         } catch (InterruptedException e) {
             log.error("上传人脸时-------->等待异常<------");
             e.printStackTrace();
+        }finally {
+            boolean updateBatch = tEvidenceService.updateBatchById(allFace);
+            log.info("上传完成批量更新了----》{} 条数据，总共 {} 条",updateBatch,allFace.size());
         }
-        boolean updateBatch = tEvidenceService.updateBatchById(allFace);
-        log.info("上传完成批量更新了----》{} 条数据，总共 {} 条",updateBatch,allFace.size());
+
     }
 
     public void sendFaceInfo(TEvidence carFace) {
