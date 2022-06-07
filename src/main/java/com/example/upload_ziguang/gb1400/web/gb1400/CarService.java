@@ -1,6 +1,7 @@
 package com.example.upload_ziguang.gb1400.web.gb1400;
 
 import cn.hutool.core.codec.Base64;
+import cn.hutool.core.convert.Convert;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.io.file.FileReader;
 import cn.hutool.http.HttpRequest;
@@ -51,7 +52,7 @@ public class CarService {
      * 以萨只需要车牌。
      */
     public void sendCar() {
-        List<TEvidence> allFace = tEvidenceService.findAllFace();
+        List<TEvidence> allFace = tEvidenceService.findAllCar();
 
 
         log.info("当前人脸数量--->{}", allFace.size());
@@ -67,7 +68,7 @@ public class CarService {
                 sendCarInfo(carFace);
                 sendFace.countDown();
             });
-
+            carFace.setIsUpload(Convert.toByte(1));
         }
 
         try {
@@ -112,11 +113,12 @@ public class CarService {
                     TimeUnit.SECONDS.sleep(3);
                 } catch (InterruptedException e) {
                     log.error("线程----------->中断异常");
+                    carRealReceiveBayonet.setIsUpload(Convert.toByte(3));
                     e.printStackTrace();
                 }
                 if (!bigPictureFile.exists()) {
                     log.error("等待三秒后--》车牌图片 {} 不存在", bigPictureFile.getAbsolutePath());
-                    carRealReceiveBayonet.setUploadNum(3);
+                    carRealReceiveBayonet.setIsUpload(Convert.toByte(3));
                     return;
                 }
             }
@@ -131,12 +133,8 @@ public class CarService {
             motorVehicle.setMotorVehicleID(Global.getFaceID(motorVehicle.getSourceID(), "02"));
             motorVehicle.setDeviceID(Global.DEVICE_IDSMAP.get(carRealReceiveBayonet.getSbbh().trim()));
             motorVehicle.setStorageUrl1("http://" + ip + ":" + prot + "/" + bigPicture.getPath());
-            try {
-                motorVehicle.setPlateNo(carRealReceiveBayonet.getHphm().isEmpty() ? "无车牌" : carRealReceiveBayonet.getHphm());
-            }catch (Exception e){
-                motorVehicle.setPlateNo("无车牌");
-            }
 
+            motorVehicle.setPlateNo( carRealReceiveBayonet.getHphm());
             motorVehicleList.add(motorVehicle);
             motorVehicleListObject.setMotorVehicleObject(motorVehicleList);
             //有无车牌
@@ -233,14 +231,14 @@ public class CarService {
             log.info("对方返回的 对象 ---》{}", responseStatus);
             int statusCode = responseStatus.getStatusCode();
             if (statusCode == 0) {
-                carRealReceiveBayonet.setUploadNum(2);
+                carRealReceiveBayonet.setIsUpload(Convert.toByte(2));
             } else {
                 log.info("车辆数据上传失败");
-                carRealReceiveBayonet.setUploadNum(3);
+                carRealReceiveBayonet.setIsUpload(Convert.toByte(3));
             }
         } catch (Exception e) {
             log.error("json解析错误----->{}", e.getMessage());
-            carRealReceiveBayonet.setUploadNum(3);
+            carRealReceiveBayonet.setIsUpload(Convert.toByte(3));
         }
     }
     public String colorToHpzl(Integer color, String hphm) {

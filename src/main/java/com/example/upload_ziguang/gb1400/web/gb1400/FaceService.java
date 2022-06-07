@@ -78,7 +78,7 @@ public class FaceService {
                 sendFaceInfo(carFace);
                 sendFace.countDown();
             });
-
+            carFace.setIsUpload(Convert.toByte(1));
         }
 
         try {

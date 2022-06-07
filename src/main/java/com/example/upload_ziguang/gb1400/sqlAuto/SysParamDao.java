@@ -690,7 +690,7 @@ public interface SysParamDao extends BaseMapper<TempData> {
             "IF\n" +
             "\tNOT EXISTS `t_temp_data` (\n" +
             "\t\t`id` INT UNSIGNED AUTO_INCREMENT,\n" +
-            "\t\t`data` longtext ,\n" +
+            "\t\t`data` varchar(5000) ,\n" +
             "\t\t`upload` int ( 1 ) ,\n" +
             "\tPRIMARY KEY ( `id` ) \n" +
             "\t) ENGINE = INNODB DEFAULT CHARSET = utf8;")

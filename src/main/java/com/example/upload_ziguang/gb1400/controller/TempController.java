@@ -40,7 +40,6 @@ public class TempController {
         }
         for (TempData tempDatum : tempData) {
             tempDatum.setUpload(1);
-            tempDatum.setData("0");
         }
         tempService.updateBatchById(tempData);
 // {"msg" : "11","code" : 0,"data" : }
