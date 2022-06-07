@@ -128,7 +128,7 @@ public class FaceService {
             log.error("人脸图片 {} 不存在，路径 {} ", bigPictureFile.getName(), bigPictureFile.getAbsolutePath());
             log.info("当前人脸实体-----》{}", carFace);
             try {
-                TimeUnit.SECONDS.sleep(3);
+                TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {
                 log.error("线程----------->中断异常");
                 e.printStackTrace();
